@@ -1,12 +1,15 @@
 import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Press from '../components/Press';
+import Strategies from '../components/Strategies';
 
 function Home () {
     return (
         <div>
             <Navbar />
-            <div className="text-center h-full">
-            <h1 className="text-2xl items-center">DenoAuth: Authentication in Deno</h1>
-            </div>
+            <Hero />
+            <Strategies />
+            <Press />
         </div>
     )
 }
