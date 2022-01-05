@@ -1,0 +1,18 @@
+.navbar {
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: top;
+}
+
+.nav-link {
+    padding: 0px 10px;
+}
+
+.logo-container {
+    padding: 0px 50px;
+}
