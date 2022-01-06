@@ -7,7 +7,7 @@ import Liprocess from '../../public/Liprocess.png';
 
 const LinkedIn = () => {
     return (
-        <div className="py-10">
+        <div className="pt-5" id="linkedin">
             
             <h1 className=" text-3xl font-light">LinkedIn</h1>
             <h3 className="text-medium font-light text-gray-500 py-5"><strong className="text-black">Step 1:</strong> Initialize a new object for LinkedIn client</h3>

@@ -7,7 +7,7 @@ import Ghprocess from '../../public/Ghprocess.png';
 
 const Github = () => {
     return (
-        <div className="py-10">
+        <div className="pt-10" id="github">
             
             <h1 className=" text-3xl font-light">Github</h1>
             <h3 className="text-medium font-light text-gray-500 py-5"><strong className="text-black">Step 1:</strong> Initialize a new object for Github client</h3>

@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Home/Hero';
 import Press from '../components/Home/Press';
 import Strategies from '../components/Home/Strategies';
-import {useEffect} from 'react';
+import Footer from '../components/Footer';
 
 function Home () {
 
@@ -14,6 +14,7 @@ function Home () {
             <Hero />
             <Strategies />
             <Press />
+            <Footer />
         </div>
     )
 }

@@ -7,7 +7,7 @@ import Googlepo from '../../public/Googlepo.png';
 
 const Google = () => {
     return (
-        <div className="py-10">
+        <div className="pt-10" id="google">
             
             <h1 className=" text-3xl font-light">Google</h1>
             <h3 className="text-medium font-light text-gray-500 py-5"><strong className="text-black">Step 1:</strong> Initialize a new object for Google client</h3>
