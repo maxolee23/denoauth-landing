@@ -21,7 +21,7 @@ export default function Navbar() {
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                 
-                  <a href="/" className="px-20"><Image src={Denoauth} height="39" width="180" alt="logo" /></a>
+                  <a href="/" className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
@@ -45,6 +45,7 @@ export default function Navbar() {
                   </a>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/oslabs-beta/DenOAuth"
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
@@ -52,6 +53,7 @@ export default function Navbar() {
                   </a>
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://deno.land/x/denoauth@v1.0.4"
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
@@ -101,6 +103,7 @@ export default function Navbar() {
               <Disclosure.Button
                 as="a"
                 target="_blank"
+                rel="noreferrer"
                 href="https://github.com/oslabs-beta/DenOAuth"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
@@ -109,6 +112,7 @@ export default function Navbar() {
               <Disclosure.Button
                 as="a"
                 target="_blank"
+                rel="noreferrer"
                 href="https://deno.land/x/denoauth@v1.0.4"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >

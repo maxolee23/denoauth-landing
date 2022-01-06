@@ -13,7 +13,7 @@ const Hero = () => {
               Documentation
               </button>
               </a>
-      <a href="https://github.com/oslabs-beta/DenOAuth" target="_blank"><button
+      <a href="https://github.com/oslabs-beta/DenOAuth" target="_blank" rel="noreferrer"><button
         type="button"
         className="inline-flex items-center px-8 py-2 border border-gray-200 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-violet-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mx-2"
       >
