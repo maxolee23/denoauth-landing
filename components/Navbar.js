@@ -4,7 +4,8 @@ import { useRouter} from 'next/router';
 import {FaGithub} from 'react-icons/fa';
 import {SiDeno} from 'react-icons/si'
 import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(' ')
@@ -16,49 +17,57 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-0">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  top-0">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                 
-                  <a href="/" className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a>
+                  <Link href="/"><a  className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a></Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="/"
+                  <Link href="/"><a
                     className={Router.pathname === "/" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     Home
                   </a>
+                  </Link>
+                  <Link href="/docs">
                   <a
-                    href="/docs"
+                    
                     className={Router.pathname === "/docs" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     Docs
                   </a>
+                  </Link>
+                  <Link href="/about">
                   <a
-                    href="/about"
+                    
                     className={Router.pathname === "/about" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     About
                   </a>
+                  </Link>
+                  <Link href="https://github.com/oslabs-beta/DenOAuth">
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://github.com/oslabs-beta/DenOAuth"
+                    
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     <FaGithub className="w-5 h-5"/>
                   </a>
+                  </Link>
+                  <Link href="https://deno.land/x/denoauth@v1.0.4">
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://deno.land/x/denoauth@v1.0.4"
+                    
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     <SiDeno className="w-5 h-5"/>
                   </a>
+                  </Link>
                 </div>
               </div>
 
