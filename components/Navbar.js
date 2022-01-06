@@ -22,17 +22,17 @@ export default function Navbar() {
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                 
-                  <Link href="/"><a  className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a></Link>
+                  <Link href="/" passHref><a  className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a></Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <Link href="/"><a
+                  <Link href="/" passHref><a
                     className={Router.pathname === "/" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     Home
                   </a>
                   </Link>
-                  <Link href="/docs">
+                  <Link href="/docs" passHref>
                   <a
                     
                     className={Router.pathname === "/docs" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
@@ -40,7 +40,7 @@ export default function Navbar() {
                     Docs
                   </a>
                   </Link>
-                  <Link href="/about">
+                  <Link href="/about" passHref>
                   <a
                     
                     className={Router.pathname === "/about" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
@@ -48,17 +48,16 @@ export default function Navbar() {
                     About
                   </a>
                   </Link>
-                  <Link href="https://github.com/oslabs-beta/DenOAuth">
+                  <Link href="https://github.com/oslabs-beta/DenOAuth" passHref>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     <FaGithub className="w-5 h-5"/>
                   </a>
                   </Link>
-                  <Link href="https://deno.land/x/denoauth@v1.0.4">
+                  <Link href="https://deno.land/x/denoauth@v1.0.4" passHref>
                   <a
                     target="_blank"
                     rel="noreferrer"

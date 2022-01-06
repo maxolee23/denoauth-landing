@@ -10,14 +10,14 @@ const Strategies = () => {
             {/* <div className="flex justify-center py-2">
              */}
              <div className="grid grid-cols-2 md:grid-cols-4 py-2">
-                <Link href="docs/#linkedin"><a className="justify-self-center py-2">
+                <Link href="/docs#linkedin"><a className="justify-self-center py-2">
                 <div >
                 <FaLinkedin className="mx-10 w-14 h-14 text-[#0e76a8]"/>
                 <h1 className="text-sm">Linkedin</h1>
                 </div>
                 </a>
                 </Link>
-                <Link href="docs/#github">
+                <Link href="/docs#github">
                 <a className="justify-self-center py-2">
                 <div>
                 <FaGithub className="mx-10 w-14 h-14" />
@@ -25,7 +25,7 @@ const Strategies = () => {
                 </div>
                 </a>
                 </Link>
-                <Link href="docs/#google">
+                <Link href="/docs#google">
                 <a  className="justify-self-center py-2">
                 <div>
                 <FcGoogle className="mx-10 w-14 h-14"/>
@@ -33,7 +33,7 @@ const Strategies = () => {
                 </div>
                 </a>
                 </Link>
-                <Link  href="docs/#spotify">
+                <Link  href="/docs#spotify">
                 <a className="justify-self-center py-2">
                 <div>
                 <FaSpotify className="mx-10 w-14 h-14 text-[#1DB954]"/>
