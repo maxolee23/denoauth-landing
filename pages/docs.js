@@ -6,6 +6,7 @@ import Github from '../components/Documentation/Github';
 import Google from '../components/Documentation/Google';
 import Divider from '../components/Divider';
 import Footer from '../components/Footer';
+import Spotify from '../components/Documentation/Spotify';
 
 const Docs = () => {
     return (
@@ -22,6 +23,7 @@ const Docs = () => {
                 <LinkedIn />
                 <Github />
                 <Google/>
+                <Spotify />
             </div>
             <Divider />
             <Footer />

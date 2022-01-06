@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Googlesnip from '../../public/Googlesnip.png';
-import Googlecl from '../../public/Googlecl.png';
-import Googlepo from '../../public/Googlepo.png';
+import Googlesnip from '../../public/images/Googlesnip.png';
+import Googlecl from '../../public/images/Googlecl.png';
+import Googlepo from '../../public/images/Googlepo.png';
 // import {FaLinkedin} from 'react-icons/fa';
 
 const Google = () => {

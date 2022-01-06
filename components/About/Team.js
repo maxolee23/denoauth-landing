@@ -1,9 +1,9 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-import profilepic from '../../public/profilepic.png';
-import mattprof from '../../public/mattprof.png';
-import danprof from '../../public/danprof.png';
-import nickprof from '../../public/nickprof.png';
+import profilepic from '../../public/images/profilepic.png';
+import mattprof from '../../public/images/mattprof.png';
+import danprof from '../../public/images/danprof.png';
+import nickprof from '../../public/images/nickprof.png';
 
 const Team = () => {
     const team = [

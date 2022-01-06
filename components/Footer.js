@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import denoauthfull from '../public/denoauthfull.png';
+import denoauthfull from '../public/images/denoauthfull.png';
 import {FaLinkedin, FaGithub} from 'react-icons/fa';
 import {SiDeno} from 'react-icons/si'
 
@@ -17,7 +17,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/denoauth" target="_blank" className="text-base text-gray-500 hover:text-gray-900 px-2">
                 <FaLinkedin className="w-5 h-5"/>
               </a>
-              <a href="https://deno.land/x/denoauth@v1.0.2" target="_blank" className="text-base text-gray-500 hover:text-gray-900 px-2">
+              <a href="https://deno.land/x/denoauth@v1.0.4" target="_blank" className="text-base text-gray-500 hover:text-gray-900 px-2">
                 <SiDeno  className="w-5 h-5"/>
               </a>
             </div>

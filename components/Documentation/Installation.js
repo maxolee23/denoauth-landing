@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import installation from '../../public/installation.png';
+import installation from '../../public/images/installation.png';
 
 const Installation = () => {
     return (

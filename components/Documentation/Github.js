@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import GithubSnip from '../../public/GithubSnip.png';
-import Ghcreatelink from '../../public/Ghcreatelink.png';
-import Ghprocess from '../../public/Ghprocess.png';
+import GithubSnip from '../../public/images/GithubSnip.png';
+import Ghcreatelink from '../../public/images/Ghcreatelink.png';
+import Ghprocess from '../../public/images/Ghprocess.png';
 // import {FaLinkedin} from 'react-icons/fa';
 
 const Github = () => {

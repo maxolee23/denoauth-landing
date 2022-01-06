@@ -1,17 +1,14 @@
 import Image from 'next/image';
-import Denoauth from '../public/Denoauth.png';
+import Denoauth from '../public/images/Denoauth.png';
 import { useRouter} from 'next/router';
 import {FaGithub} from 'react-icons/fa';
 import {SiDeno} from 'react-icons/si'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 export default function Navbar() {
   const Router = useRouter()
@@ -55,7 +52,7 @@ export default function Navbar() {
                   </a>
                   <a
                     target="_blank"
-                    href="https://deno.land/x/denoauth@v1.0.2"
+                    href="https://deno.land/x/denoauth@v1.0.4"
                     className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     <SiDeno className="w-5 h-5"/>
@@ -112,7 +109,7 @@ export default function Navbar() {
               <Disclosure.Button
                 as="a"
                 target="_blank"
-                href="https://deno.land/x/denoauth@v1.0.2"
+                href="https://deno.land/x/denoauth@v1.0.4"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 <SiDeno className="w-5 h-5"/>

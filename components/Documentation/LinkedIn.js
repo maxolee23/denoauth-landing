@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import LinkedinSnip from '../../public/LinkedinSnip.png';
-import Licreatelink from '../../public/licreatelink.png';
-import Liprocess from '../../public/Liprocess.png';
+import LinkedinSnip from '../../public/images/LinkedinSnip.png';
+import Licreatelink from '../../public/images/licreatelink.png';
+import Liprocess from '../../public/images/Liprocess.png';
 // import {FaLinkedin} from 'react-icons/fa';
 
 const LinkedIn = () => {
