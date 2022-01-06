@@ -22,7 +22,7 @@ export default function Navbar() {
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                 
-                  <Link href="/" passHref><a  className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a></Link>
+                <Link href="/" passHref><a className="px-20"><Image src={Denoauth} alt="logo" height="39" width="180" alt="logo" /></a></Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}

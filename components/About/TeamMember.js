@@ -10,8 +10,8 @@ const TeamMember = ({member}) => {
             <h1 className="text-xl">{member.name}</h1>
             <p className="text-xs px-20 md:px-16 pt-2 text-left">{member.bio}</p>
             <div className="flex justify-center pt-2 pb-4">
-                <Link href={member.linkedIn}><a target="_blank" rel="noreferrer" className="px-5"><FaLinkedin className="h-10 w-10 md:h-14 md:w-14 text-[#0e76a8]"/></a></Link>
-                <Link href={member.github}><a target="_blank" rel="noreferrer" className="px-5"><FaGithub className="h-10 w-10 md:h-14 md:w-14"/></a></Link>
+                <Link href={member.linkedIn} passHref><a target="_blank" rel="noreferrer" className="px-5"><FaLinkedin className="h-10 w-10 md:h-14 md:w-14 text-[#0e76a8]"/></a></Link>
+                <Link href={member.github} passHref><a target="_blank" rel="noreferrer" className="px-5"><FaGithub className="h-10 w-10 md:h-14 md:w-14"/></a></Link>
             </div>
         </div>
     )
