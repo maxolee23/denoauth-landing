@@ -1,25 +1,7 @@
 import Image from 'next/image';
 import DenoAuthLogo from '../public/DenoAuthLogo.png';
-
-// function Navbar (){
-//     return (
-//         <div className="navbar">
-            
-
-//             <ul className="nav-links">
-//                 <li className="nav-link">Home</li>
-//                 <li className="nav-link">Docs</li>
-//                 <div className="logo-container">
-//                 <Image src={DenoAuthLogo} height="39" width="150" alt="logo" />
-//                 </div>
-//                 <li className="nav-link">Learn</li>
-//                 <li className="nav-link">Github</li>
-//             </ul>
-//         </div>
-//     )
-// };
-
-// export default Navbar;
+import { useRouter} from 'next/router';
+import {FaGithub} from 'react-icons/fa';
 
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
@@ -30,12 +12,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
+  const Router = useRouter()
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-0">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
@@ -49,33 +32,34 @@ export default function Example() {
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
                     alt="Workflow"
                   /> */}
-                  <a href="/home"><Image src={DenoAuthLogo} height="39" width="150" alt="logo" /></a>
+                  <a href="/home" className="px-20"><Image src={DenoAuthLogo} height="39" width="150" alt="logo" /></a>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="/home"
-                    className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className={Router.pathname === "/home" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     Home
                   </a>
                   <a
-                    href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    href="/docs"
+                    className={Router.pathname === "/docs" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     Docs
                   </a>
                   <a
-                    href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    href="/about"
+                    className={Router.pathname === "/about" ? 'border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium':'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'}
                   >
                     About
                   </a>
                   <a
-                    href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    target="_blank"
+                    href="https://github.com/oslabs-beta/DenOAuth"
+                    className="border-transparent text-gray-500  inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
-                    Github
+                    <FaGithub className="w-5 h-5"/>
                   </a>
                 </div>
               </div>
