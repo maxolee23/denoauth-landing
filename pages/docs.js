@@ -4,6 +4,7 @@ import Installation from '../components/Documentation/Installation';
 import LinkedIn from '../components/Documentation/LinkedIn';
 import Github from '../components/Documentation/Github';
 import Google from '../components/Documentation/Google';
+import Discord from '../components/Documentation/Discord';
 import Divider from '../components/Divider';
 import Footer from '../components/Footer';
 import Spotify from '../components/Documentation/Spotify';
@@ -24,6 +25,7 @@ const Docs = () => {
                 <Github />
                 <Google/>
                 <Spotify />
+                <Discord />
             </div>
             <Divider />
             <Footer />

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaLinkedin, FaGithub, FaSpotify} from 'react-icons/fa';
+import {FaLinkedin, FaGithub, FaSpotify, FaDiscord} from 'react-icons/fa';
 import {FcGoogle} from 'react-icons/fc';
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ const Strategies = () => {
             <h1 className="text-3xl font-extralight py-2">Available Strategies</h1>
             {/* <div className="flex justify-center py-2">
              */}
-             <div className="grid grid-cols-2 md:grid-cols-4 py-2">
+             <div className="grid grid-cols-2 md:grid-cols-5 py-2">
                 <Link href="/docs#linkedin" passHref><a className="justify-self-center py-2">
                 <div >
                 <FaLinkedin className="mx-10 w-14 h-14 text-[#0e76a8]"/>
@@ -38,6 +38,14 @@ const Strategies = () => {
                 <div>
                 <FaSpotify className="mx-10 w-14 h-14 text-[#1DB954]"/>
                 <h1 className="text-sm">Spotify</h1>
+                </div>
+                </a>
+                </Link>
+                <Link  href="/docs#discord" passHref>
+                <a className="justify-self-center py-2">
+                <div>
+                <FaDiscord className="mx-10 w-14 h-14 text-[#1DB954]"/>
+                <h1 className="text-sm">Discord</h1>
                 </div>
                 </a>
                 </Link>
