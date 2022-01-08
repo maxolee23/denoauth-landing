@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import DiscordSnip from '../../public/images/LinkedinSnip.png';
+import DiscordSnip from '../../public/images/DiscordSnip.png';
 import Discordlink from '../../public/images/Dicreatelink.png';
 import Diprocess from '../../public/images/Diprocess.png';
 // import {FaLinkedin} from 'react-icons/fa';
