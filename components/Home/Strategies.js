@@ -9,7 +9,7 @@ const Strategies = () => {
             <h1 className="text-3xl font-extralight py-2">Available Strategies</h1>
             {/* <div className="flex justify-center py-2">
              */}
-             <div className="grid grid-cols-2 md:grid-cols-4 py-2">
+             <div className="grid grid-cols-2 md:grid-cols-5 py-2">
                 <Link href="/docs#linkedin" passHref><a className="justify-self-center py-2">
                 <div >
                 <FaLinkedin className="mx-10 w-14 h-14 text-[#0e76a8]"/>
